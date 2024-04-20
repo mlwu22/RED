@@ -1,0 +1,11 @@
+transformers==4.39.1
+datasets==2.18.0
+tensorboard
+sentencepiece
+scipy
+scikit-learn
+fire
+trl
+matplotlib
+scikit-image
+future
