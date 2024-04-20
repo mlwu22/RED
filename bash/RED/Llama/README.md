@@ -47,7 +47,7 @@ This directory contains the scrpits for training and evaluation of RED on Llama2
 - We have also provided the checkpoint of editing vectors at `model/Llama/checkpoint`, and we use [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) for open llm Evaluation and [FastChat](https://github.com/lm-sys/FastChat) for MT-Bench evaluation.
 
   ```bash
-  cd lm-evaluation-harness
+  cd ../../../lm-evaluation-harness
   pip install -e .
   bash bash/run.sh
   ```
