@@ -1,17 +1,17 @@
 # Introduction
 
-This directory contains the scrpits for training and evaluation of RED++ on GPT-2 medium and GPT-2 large, the results are shown as follows:
+This directory contains the scripts for training and evaluation of RED++ on GPT-2 medium and GPT-2 large, the results are shown as follows:
 
 |          | Params. |      BLUE       |      NIST      |     METEOR      |     ROUGE_L     |     CIDEr      |
 | :------: | :-----: | :-------------: | :------------: | :-------------: | :-------------: | :------------: |
 | LoRA(M)  |  0.8M   |      67.43      |      8.65      |      46.01      |      69.64      |      2.42      |
 |  RED(M)  |  0.05M  |      64.86      |      8.36      |      44.99      |      67.62      |      2.28      |
-| RED++(M) |  0.25M  | 66.68$\uparrow$ | 8.53$\uparrow$ | 46.28$\uparrow$ | 69.63$\uparrow$ | 2.38$\uparrow$ |
+| RED++(M) |  0.25M  | 66.68&uarr; | 8.53&uarr; | 46.28&uarr; | 69.63&uarr; | 2.38&uarr; |
 | LoRA(L)  |  1.5M   |      68.24      |      8.76      |      46.23      |      69.92      |      2.42      |
 |  RED(L)  |  0.09M  |      65.77      |      8.42      |      46.12      |      69.03      |      2.36      |
-| RED++(L) |  0.46M  | 68.31$\uparrow$ | 8.78$\uparrow$ | 46.12$\uparrow$ | 69.80$\uparrow$ | 2.41$\uparrow$ |
+| RED++(L) |  0.46M  | 68.31&uarr; | 8.78&uarr; | 46.12&uarr; | 69.80&uarr; | 2.41&uarr; |
 
-Notation: "(M)" denotes GPT-2 medium, "(L)" denotes GPT-2 large, "++" denotes that we introduce more trainable parameters to train the model and "$\uparrow$\" denotes an improvement in the performance of the model on these metrics.
+Notation: "(M)" denotes GPT-2 medium, "(L)" denotes GPT-2 large, "++" denotes that we introduce more trainable parameters to train the model, and "$\uparrow$\" denotes an improvement in the performance of the model on these metrics.
 
 
 
@@ -87,7 +87,7 @@ Notation: "(M)" denotes GPT-2 medium, "(L)" denotes GPT-2 large, "++" denotes th
   done
   ```
 
-  - When Training is completed, the checkpint and output result of the model will be saved in folder `RED/Results/RED++/gpt2-medium-more/save_models` and `RED/Results/RED++/gpt2-medium-more/generation` respectively
+  - When Training is completed, the checkpoint and output result of the model will be saved in folder `RED/Results/RED++/gpt2-medium-more/save_models` and `RED/Results/RED++/gpt2-medium-more/generation` respectively
 
 
 
@@ -101,5 +101,5 @@ Notation: "(M)" denotes GPT-2 medium, "(L)" denotes GPT-2 large, "++" denotes th
    ```
 
    - When the previous stage of training is completed, folder `RED/Results/RED++/gpt2-medium-more/generation`  will store `label` and `pred`. 
-   - Passing the corresponding path, and the tesing of the model can be completed
+   - Passing the corresponding path, and the testing of the model can be completed
 
